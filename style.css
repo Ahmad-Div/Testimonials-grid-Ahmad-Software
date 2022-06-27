@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Big+Shoulders+Display:wght@700&family=Bitter&family=Fira+Sans:wght@600&family=Fraunces:opsz,wght@9..144,700&family=Inconsolata:wght@600&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Lobster&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@100&display=swap');
+
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+/* general setting */
+
+
+* {
+    box-sizing: content-box;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: #EEEEEE;
+}
+
+h1 {
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+
+
+
+/* general card style */
+
+.card-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+
+}
+
+.four-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    width: 58%;
+
+}
+
+.cards {
+    margin: 1rem 1rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07),
+        0 2px 4px rgba(0, 0, 0, 0.07),
+        0 4px 8px rgba(0, 0, 0, 0.07),
+        0 8px 16px rgba(0, 0, 0, 0.07),
+        0 16px 32px rgba(0, 0, 0, 0.07),
+        0 32px 64px rgba(0, 0, 0, 0.07);
+
+    transition: 0.7s ease;
+    cursor: pointer;
+}
+
+.cards:hover {
+    transform: scale(1.1);
+}
+
+
+/* first card */
+
+
+#first-card {
+    width: 30rem;
+    padding: 1rem 2rem;
+    background-color: #363062;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+}
+
+.img-header {
+    display: flex;
+    justify-content: left;
+}
+
+.img-header .header-content {
+    margin-left: 1.1rem;
+    line-height: 0.6rem;
+}
+
+.img-header .img {
+    border-radius: 50px;
+    width: 2rem;
+    height: 2rem;
+    margin-top: 0.6rem;
+}
+
+
+
+/* second card */
+
+
+#second-card {
+    width: 12rem;
+    background-color: #7F8487;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+}
+
+
+
+/* third card */
+
+
+#third-card {
+    width: 12rem;
+    background-color: hsl(0, 0%, 100%);
+    color: #1B2430;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+
+/* fourth card */
+
+
+#fourth-card {
+    width: 30rem;
+    background-color: #141E27;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+}
+
+
+/* fifth card */
+
+#fifth-card {
+    width: 12rem;
+    height: 34rem;
+    background-color: hsl(0, 0%, 100%);
+    color: #1B2430;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+}
+
+#fifth-card p {
+    line-height: 1.1rem;
+}
+
+
+
+footer {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+
+@media(max-width:1015px) and (min-width:720px) {
+
+    #second-card {
+        width: 30rem;
+    }
+
+    #third-card {
+        width: 30rem;
+    }
+
+    #fourth-card {
+        width: 30rem;
+    }
+
+    #fifth-card {
+        width: 23rem;
+        height: 22rem;
+    }
+}
+
+
+@media(max-width:719px) and (min-width:300px) {
+    .four-card {
+        width: 90%;
+    }
+
+    #second-card {
+        width: 30rem;
+    }
+
+    #third-card {
+        width: 30rem;
+    }
+
+    #fourth-card {
+        width: 30rem;
+    }
+
+    #fifth-card {
+        width: 15rem;
+        height: 30rem;
+    }
+}
+
+
+@media(width:280px) {
+    .four-card {
+        width: 95%;
+    }
+
+    #fifth-card {
+        width: 15rem;
+        height: 38rem;
+    }
+}
